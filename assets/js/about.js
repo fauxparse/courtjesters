@@ -7,7 +7,7 @@
   };
 
   $(function() {
-    return $.getJSON("/jesters.json").done(function(jesters) {
+    return $.getJSON("http://fauxparse.github.io/courtjesters/jesters.json").done(function(jesters) {
       var article, container, content, id, jester, label, modal, _i, _len, _results;
       container = $(".portraits");
       _results = [];
@@ -22,7 +22,7 @@
           "for": id
         }).appendTo(article);
         label.append($("<img>", {
-          src: "/assets/img/jesters/" + jester.id + ".jpg"
+          src: "http://fauxparse.github.io/courtjesters/assets/img/jesters/" + jester.id + ".jpg"
         }));
         label.append($("<h3>", {
           text: jester.name
@@ -52,7 +52,7 @@
           "class": "modal-content"
         }).appendTo(modal);
         content.append($("<figure>").append($("<img>", {
-          src: "/assets/img/jesters/" + jester.id + "-full.jpg",
+          src: "http://fauxparse.github.io/courtjesters/assets/img/jesters/" + jester.id + "-full.jpg",
           on: {
             error: markMissingImage
           }
