@@ -1,0 +1,62 @@
+{
+  "checksum": {
+    "previous": "be4a7262d6c9199127224a959108c47564e57712719708dbc1284753ab0e8f5c",
+    "current": "be4a7262d6c9199127224a959108c47564e57712719708dbc1284753ab0e8f5c"
+  },
+  "fonts": [
+    "assets/fonts/fontcustom_be4a7262d6c9199127224a959108c475.ttf",
+    "assets/fonts/fontcustom_be4a7262d6c9199127224a959108c475.svg",
+    "assets/fonts/fontcustom_be4a7262d6c9199127224a959108c475.woff",
+    "assets/fonts/fontcustom_be4a7262d6c9199127224a959108c475.eot"
+  ],
+  "glyphs": {
+    "crown": {
+      "codepoint": 61696,
+      "source": "assets/icons/svg/crown.svg"
+    },
+    "events": {
+      "codepoint": 61699,
+      "source": "assets/icons/svg/events.svg"
+    },
+    "logo": {
+      "codepoint": 61698,
+      "source": "assets/icons/svg/logo.svg"
+    },
+    "shows": {
+      "codepoint": 61700,
+      "source": "assets/icons/svg/shows.svg"
+    },
+    "training": {
+      "codepoint": 61701,
+      "source": "assets/icons/svg/training.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": "assets/icons/svg",
+      "vectors": "assets/icons/svg"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "assets/fonts",
+      "fonts": "assets/fonts",
+      "preview": "assets/icons/styleguide"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "assets/fonts/fontcustom.css",
+    "assets/icons/styleguide/fontcustom-preview.html"
+  ]
+}

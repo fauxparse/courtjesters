@@ -1,0 +1,37 @@
+!!!
+%html{data: { page: "events" } }
+  <!-- @include _header -->
+
+  .page-title
+    .container
+      %h1 Your next event
+
+  %section.search-tools
+    .container
+      %p Tell us a bit about your event and we’ll show you the products we think are right for you.
+      .filter{rel: "occasion"}
+        %label What’s the occasion?
+        .options
+          %ol
+      .filter{rel: "guests"}
+        %label How many guests?
+        .options
+          %ol
+      .filter{rel: "budget"}
+        %label What’s your budget?
+        .options
+          %ol
+
+  %section.events-products#packages
+    .container
+      .products
+
+  %blockquote.full-width
+    %p
+      Very lively and entertaining. Really put the icing on what was a
+      %em completely fun evening.
+    %cite Catherine Petrie
+
+  <!-- @javascript images packery spine events -->
+
+  <!-- @include _footer -->
