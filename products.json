@@ -1,0 +1,202 @@
+{
+  "filters": [
+    {
+      "id": "occasion",
+      "label": "What’s the occasion?",
+      "values": [
+        [ "birthday", "birthday or anniversary" ],
+        [ "wedding", "wedding" ],
+        [ "christmas", "office Christmas party" ],
+        [ "prizegiving", "prizegiving" ],
+        [ "product-launch", "product launch" ],
+        [ "fundraiser", "fundraiser" ],
+        [ "meal", "sit-down meal" ]
+      ]
+    },
+    {
+      "id": "guests",
+      "label": "How many guests?",
+      "values": [
+        [ "small", "0–50" ],
+        [ "medium", "50–100" ],
+        [ "large", "100–200" ],
+        [ "huge", "200+" ]
+      ]
+    },
+    {
+      "id": "budget",
+      "label": "What’s your budget?",
+      "values": [
+        [ "frugal", "minimal" ],
+        [ "thrifty", "within reason" ],
+        [ "extravagant", "no expense spared!" ]
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "pair-of-knaves",
+      "name": "A Pair of Knaves",
+      "summary": "A spontaneous mini-show tailored to your event.",
+      "stats": {
+        "actors": 2,
+        "time": 20,
+        "price": 300
+      },
+      "filters": {
+        "occasion": [ "birthday", "wedding", "christmas", "prizegiving", "product-launch", "meal" ],
+        "guests": [ "small", "medium", "large" ],
+        "budget": [ "frugal" ]
+      }
+    },
+    {
+      "id": "two-princes",
+      "name": "Two Princes",
+      "summary": "A perfect pair of our company's finest.",
+      "stats": {
+        "actors": 2,
+        "time": 35,
+        "price": 500
+      },
+      "filters": {
+        "guests": [ "small", "medium", "large" ],
+        "budget": [ "frugal", "thrifty" ]
+      }
+    },
+    {
+      "id": "queens-favourites",
+      "name": "The Queen’s Favourites",
+      "summary": "A triple-threat of our most skilled improvisors weave together a 45-minute comedy show.",
+      "stats": {
+        "actors": 3,
+        "time": 45,
+        "price": 1000
+      },
+      "filters": {
+        "occasion": [ "birthday", "wedding", "christmas", "product-launch", "fundraiser" ],
+        "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "frugal", "thrifty", "extravagant" ]
+      }
+    },
+    {
+      "id": "royal-treatment",
+      "name": "The Royal Treatment",
+      "summary": "A 5-star, 5-player, modern improvised comedy show.",
+      "stats": {
+        "actors": 5,
+        "time": [60, 80],
+        "price": 1000
+      },
+      "filters": {
+        "occasion": [ "birthday", "product-launch", "fundraiser" ],
+        "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "extravagant" ]
+      }
+    },
+    {
+      "id": "mc-half",
+      "name": "Event MC (evening/half-day)",
+      "summary": "Our charming host will ensure your event runs smoothly and with a touch of humour.",
+      "stats": {
+        "actors": 1,
+        "time": "½ day",
+        "price": 800
+      },
+      "filters": {
+        "occasion": [ "birthday", "christmas", "prizegiving", "product-launch", "fundraiser", "meal" ],
+        "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "thrifty", "extravagant" ]
+      }
+    },
+    {
+      "id": "mc-full",
+      "name": "Event MC (full day)",
+      "summary": "Our MCs are charming, funny, adaptable, and experts at being able to roll with the punches.",
+      "stats": {
+        "actors": 1,
+        "time": "1 day",
+        "price": 1500
+      },
+      "filters": {
+        "occasion": [ "birthday", "christmas", "product-launch", "fundraiser", "meal" ],
+        "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "thrifty", "extravagant" ]
+      }
+    },
+    {
+      "id": "mc-wedding",
+      "name": "Wedding MC",
+      "summary": "No MC organised for the big day? no problem!",
+      "stats": {
+        "actors": 1,
+        "time": "1 day",
+        "price": 1500
+      },
+      "filters": {
+        "occasion": [ "wedding" ],
+        "guests": [ "medium", "large", "huge" ],
+        "budget": [ "thrifty", "extravagant" ]
+      }
+    },
+    {
+      "id": "wedding-crashers",
+      "name": "Wedding Crashers",
+      "summary": "Enliven your reception with a short improvised comedy show.",
+      "stats": {
+        "actors": 2,
+        "time": [15,20],
+        "price": 500
+      },
+      "filters": {
+        "occasion": [ "wedding" ],
+        "guests": [ "small", "medium", "large" ],
+        "budget": [ "frugal", "thrifty" ]
+      }
+    },
+    {
+      "id": "worst-waiters",
+      "name": "World’s Worst Waiters",
+      "summary": "Watch the looks of disapproval and disbelief on your guests faces turn into utter delight.",
+      "stats": {
+        "actors": 2,
+        "time": 120,
+        "price": 400
+      },
+      "filters": {
+        "occasion": [ "wedding", "christmas", "prizegiving", "meal" ],
+        "guests": [ "small", "medium" ],
+        "budget": [ "thrifty", "extravagant" ]
+      }
+    },
+    {
+      "id": "wacky-waiters",
+      "name": "Wacky Waiters",
+      "summary": "These waiters are completely unfit for the job!",
+      "stats": {
+        "actors": 2,
+        "time": 120,
+        "price": 400
+      },
+      "filters": {
+        "occasion": [ "birthday", "wedding", "christmas", "product-launch", "fundraiser", "meal" ],
+        "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "frugal", "thrifty" ]
+      }
+    },
+    {
+      "id": "roam",
+      "name": "Costumed Characters",
+      "summary": "Whatever the event, there is a matching character or set of characters that we can provide.",
+      "stats": {
+        "actors": "2+",
+        "time": "30+",
+        "price": "400+"
+      },
+      "filters": {
+        "occasion": [ "birthday", "wedding", "christmas", "prizegiving", "product-launch", "fundraiser", "meal" ],
+        "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "thrifty", "extravagant" ]
+      }
+    }
+  ]
+}

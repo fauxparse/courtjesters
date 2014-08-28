@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html data-page='training'>
+  <head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
+  <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='../assets/css/normalize.css'>
+<link rel='stylesheet' href='../assets/fonts/fontcustom.css'>
+<link rel='stylesheet' href='../assets/css/style.css'>
+  <script src='../assets/js/jquery-1.8.3.min.js'></script>
+<script src='../assets/js/app.js'></script>
+  <link href='../assets/favicon.ico' rel='shortcut icon'>
+  <link href='../assets/apple-touch-icon.png' rel='apple-touch-icon'>
+  <title>The Court Jesters</title>
+</head>
+<body>
+  <header>
+    <nav>
+  <ul>
+    <li>
+      <a href='/' rel='home'>
+        <i class='icon-crown'></i>
+      </a>
+    </li>
+    <li>
+      <a href='/events/' rel='events'>Your next event</a>
+    </li>
+    <li>
+      <a href='/shows/' rel='shows'>Our shows</a>
+    </li>
+    <li>
+      <a href='/training/' rel='training'>Training</a>
+    </li>
+    <li>
+      <a href='/about/' rel='about'>Who we are</a>
+    </li>
+  </ul>
+  <img class='logo' src='../assets/img/jesters-logo.svg'>
+</nav>
+
+  </header>
+</body>
+
+  <div class='page-title'>
+    <div class='container'>
+      <h1>Training</h1>
+    </div>
+  </div>
+  <blockquote class='full-width'>
+    <p>
+      Terrific, inspiring, amusing, perceptive and
+      <em>jolly good fun!</em>
+    </p>
+    <cite>Residential Care Conference Dinner</cite>
+  </blockquote>
+  <section class='training-corporate' id='corporate-training'>
+    <div class='container'>
+      <article>
+        <h2>Corporate Training</h2>
+        <p>Our interactive training techniques put words into action! Improving spontaneity has many benefits for any business that values fresh ideas and a customer service focus. The Court Jesters have worked with franchisees, corporates, and MBA students to allow individuals to be more confident when outside their comfort zone. We also specifically offer:</p>
+        <ul>
+          <li>Corporate training</li>
+          <li>Team building</li>
+          <li>Presentation skills</li>
+          <li>Improvisation training</li>
+          <li>Body language</li>
+          <li>Public speaking</li>
+          <li>Role play scenarios for employment interviews</li>
+        </ul>
+        <p>
+          <a href='mailto:jesters@courttheatre.org.nz?subject=Corporate+training'>Get in touch today</a>
+          to find out how we can help you.
+        </p>
+      </article>
+      <figure class='missing-image'>
+        <img src='http://placehold.it/400x300'>
+      </figure>
+    </div>
+  </section>
+  <section class='training-workshops' id='workshops'>
+    <div class='container'>
+      <article>
+        <h2>Learn to improvise</h2>
+        <p>The Court Theatre runs Improv Classes for participants aged 18 years and older.</p>
+        <h3>Intro to Improv</h3>
+        <p>
+          <strong>Intro to Improv Parts 1 and 2</strong>
+          introduce fundamental improvisation techniques in an environment in which all participants can discover the charismatic performers inside themselves. Intro to Improv courses require no previous experience.
+        </p>
+        <h3>Performance</h3>
+        <p>
+          Our
+          <strong>Performance Improv</strong>
+          class is open to all students who have prior improv training, or who have completed Intro to Improv Parts 1 and 2. Each term students team up with a Court Jester to create an improvised show, honing their improv skills along the way. In 2013 PERFORMANCE classes will present four formats: Director’s Cut; Fairy Tale; Film Noir; and Musical.
+        </p>
+        <p>
+          For further information, check out
+          <a href='http://www.courttheatre.org.nz/education/training'>The Court Theatre’s Education page</a>.
+        </p>
+        <p>
+          If you’d like to enrol, please email Alice at
+          <a href='mailto:alicecanton@courttheatre.org.nz'>alicecanton@courttheatre.org.nz</a>.
+        </p>
+      </article>
+      <figure class='missing-image'>
+        <img src='http://placehold.it/400x500'>
+      </figure>
+    </div>
+  </section>
+  <section class='training-schools' id='schools'>
+    <div class='container'>
+      <article>
+        <h2>Theatre Sports™ in schools</h2>
+        <p>Theatre Sports™ in schools is an annual competition for improvised theatre held by The Court Theatre. School teams of up to six perform scenes and games based on audience suggestions, scored by a judging panel of The Court Jesters. Teams who progress through the heats are invited to participate in the grand final at The Court Theatre.</p>
+        <p>Intermediate and secondary schools that register are assigned a coach who will provide ongoing improvisation training, as well as professional sessions with The Court Jesters.</p>
+        <p>
+          For more information, or to register your school, please see
+          <a href='http://www.courttheatre.org.nz/education/participate'>the Court Theatre’s website</a>.
+        </p>
+      </article>
+      <figure>
+        <img src='../assets/img/training/cashmere.jpg'>
+      </figure>
+    </div>
+  </section>
+  <footer class='footer'>
+  <a class='logo' href='/'>
+    <i class='icon-crown'></i>
+  </a>
+  <div class='footer-links'>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/events/' title='Your next event'>Your next event</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/events/#packages' title='Packages'>Packages</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/events/#fundraisers' title='Fundraisers'>Fundraisers</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/shows/' title='Our shows'>Our shows</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/shows/#scriptless' title='Scared Scriptless'>Scared Scriptless</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/shows/#past' title='Past shows'>Past shows</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/training/' title='Training'>Training</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/training/#corporate-training' title='Corporate training'>Corporate training</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/training/#workshops' title='Learn to improvise'>Learn to improvise</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/training/#schools' title='Theatre Sports™ in schools'>Theatre Sports™ in schools</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/about/' title='Who we are'>Who we are</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/about/#us' title='Meet the Jesters'>Meet the Jesters</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/about/#casting' title='Casting information'>Casting information</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/about/#theatre' title='The Court Theatre'>The Court Theatre</a>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <p class='social-media'>
+    <a href='https://www.facebook.com/scaredscriptlessnz'>
+      <i class='fa fa-facebook-square'></i>
+    </a>
+    <a href='http://twitter.com/courtjesters'>
+      <i class='fa fa-twitter'></i>
+    </a>
+    <a href='mailto:jesters@courttheatre.org.nz'>
+      <i class='fa fa-envelope'></i>
+    </a>
+  </p>
+</footer>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html data-page='events'>
+  <head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
+  <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='../assets/css/normalize.css'>
+<link rel='stylesheet' href='../assets/fonts/fontcustom.css'>
+<link rel='stylesheet' href='../assets/css/style.css'>
+  <script src='../assets/js/jquery-1.8.3.min.js'></script>
+<script src='../assets/js/app.js'></script>
+  <link href='../assets/favicon.ico' rel='shortcut icon'>
+  <link href='../assets/apple-touch-icon.png' rel='apple-touch-icon'>
+  <title>The Court Jesters</title>
+</head>
+<body>
+  <header>
+    <nav>
+  <ul>
+    <li>
+      <a href='/' rel='home'>
+        <i class='icon-crown'></i>
+      </a>
+    </li>
+    <li>
+      <a href='/events/' rel='events'>Your next event</a>
+    </li>
+    <li>
+      <a href='/shows/' rel='shows'>Our shows</a>
+    </li>
+    <li>
+      <a href='/training/' rel='training'>Training</a>
+    </li>
+    <li>
+      <a href='/about/' rel='about'>Who we are</a>
+    </li>
+  </ul>
+  <img class='logo' src='../assets/img/jesters-logo.svg'>
+</nav>
+
+  </header>
+</body>
+
+  <div class='page-title'>
+    <div class='container'>
+      <h1>Your next event</h1>
+    </div>
+  </div>
+  <section class='search-tools'>
+    <div class='container'>
+      <p>Tell us a bit about your event and we’ll show you the products we think are right for you.</p>
+      <div class='filter' rel='occasion'>
+        <label>What’s the occasion?</label>
+        <div class='options'>
+          <ol></ol>
+        </div>
+      </div>
+      <div class='filter' rel='guests'>
+        <label>How many guests?</label>
+        <div class='options'>
+          <ol></ol>
+        </div>
+      </div>
+      <div class='filter' rel='budget'>
+        <label>What’s your budget?</label>
+        <div class='options'>
+          <ol></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='events-products' id='packages'>
+    <div class='container'>
+      <div class='products'></div>
+    </div>
+  </section>
+  <blockquote class='full-width'>
+    <p>
+      Very lively and entertaining. Really put the icing on what was a
+      <em>completely fun evening.</em>
+    </p>
+    <cite>Catherine Petrie</cite>
+  </blockquote>
+  <script src='../assets/js/images.js'></script>
+<script src='../assets/js/packery.js'></script>
+<script src='../assets/js/spine.js'></script>
+<script src='../assets/js/events.js'></script>
+  <footer class='footer'>
+  <a class='logo' href='/'>
+    <i class='icon-crown'></i>
+  </a>
+  <div class='footer-links'>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/events/' title='Your next event'>Your next event</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/events/#packages' title='Packages'>Packages</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/events/#fundraisers' title='Fundraisers'>Fundraisers</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/shows/' title='Our shows'>Our shows</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/shows/#scriptless' title='Scared Scriptless'>Scared Scriptless</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/shows/#past' title='Past shows'>Past shows</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/training/' title='Training'>Training</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/training/#corporate-training' title='Corporate training'>Corporate training</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/training/#workshops' title='Learn to improvise'>Learn to improvise</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/training/#schools' title='Theatre Sports™ in schools'>Theatre Sports™ in schools</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/about/' title='Who we are'>Who we are</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/about/#us' title='Meet the Jesters'>Meet the Jesters</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/about/#casting' title='Casting information'>Casting information</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/about/#theatre' title='The Court Theatre'>The Court Theatre</a>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <p class='social-media'>
+    <a href='https://www.facebook.com/scaredscriptlessnz'>
+      <i class='fa fa-facebook-square'></i>
+    </a>
+    <a href='http://twitter.com/courtjesters'>
+      <i class='fa fa-twitter'></i>
+    </a>
+    <a href='mailto:jesters@courttheatre.org.nz'>
+      <i class='fa fa-envelope'></i>
+    </a>
+  </p>
+</footer>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html data-page='about'>
+  <head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
+  <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='../assets/css/normalize.css'>
+<link rel='stylesheet' href='../assets/fonts/fontcustom.css'>
+<link rel='stylesheet' href='../assets/css/style.css'>
+  <script src='../assets/js/jquery-1.8.3.min.js'></script>
+<script src='../assets/js/app.js'></script>
+  <link href='../assets/favicon.ico' rel='shortcut icon'>
+  <link href='../assets/apple-touch-icon.png' rel='apple-touch-icon'>
+  <title>The Court Jesters</title>
+</head>
+<body>
+  <header>
+    <nav>
+  <ul>
+    <li>
+      <a href='/' rel='home'>
+        <i class='icon-crown'></i>
+      </a>
+    </li>
+    <li>
+      <a href='/events/' rel='events'>Your next event</a>
+    </li>
+    <li>
+      <a href='/shows/' rel='shows'>Our shows</a>
+    </li>
+    <li>
+      <a href='/training/' rel='training'>Training</a>
+    </li>
+    <li>
+      <a href='/about/' rel='about'>Who we are</a>
+    </li>
+  </ul>
+  <img class='logo' src='../assets/img/jesters-logo.svg'>
+</nav>
+
+  </header>
+</body>
+
+  <div class='page-title'>
+    <div class='container'>
+      <h1>Who we are</h1>
+    </div>
+  </div>
+  <blockquote class='full-width'>
+    <p>
+      Thank you for your outstanding performances.
+      <em>It is always great to deal with professionals.</em>
+    </p>
+    <cite>Christchurch City Council</cite>
+  </blockquote>
+  <section class='about-history'>
+    <div class='container'>
+      <h2>Professional improvisors for nearly 30 years.</h2>
+      <article class='too-much-text'>
+        <p>Theatre Sports™ was first introduced to Christchurch in 1987, and a number of enthusiasts were quick to take the plunge performing in teams on a Sunday night. These people included Kirsty Gillespie, Patrick Duffy and Ross Gumbley, now Artistic Director at the Court Theatre. Each scene was judged for entertainment, storyline and technique, with the two most highly-scoring teams performing for the entire evening while other teams were eliminated.</p>
+        <p>
+          After about six months, some of the more accomplished improvisers were invited to take part in a late night improv show called
+          <a href='/shows/#scriptless'>Scared Scriptless</a>,
+          starting at 11pm. The improvisers were less constrained by the Theatre Sports format, and, over the years, developed a number of other show formats within this time slot and within the broader Court Theatre programme. A number of well-known actors and comedians honed their improv skills at the Court, including Greg Cooper, Cal Wilson, KC Kelly, and the late Kevin Smith. In 1994, the Court Jesters took on 16 of the world’s best Theatre Sports teams, and were crowned World Champions.
+        </p>
+        <p>In 2006, a new and larger audience was introduced to Scared Scriptless when the show was brought forward to 10pm, and a weekly Saturday show was added alongside Friday nights in 2010. The Court Jesters are proud to call Scared Scriptless Australasia’s longest-running comedy show.</p>
+        <p>The Court Jesters also perform over 100 shows a year off-site, bringing their peculiar brand of comedy and skills to corporate events, parties and conferences.</p>
+      </article>
+      <figure class='missing-image'>
+        <img src='http://placehold.it/400x300'>
+      </figure>
+    </div>
+  </section>
+  <section class='about-jesters' id='us'>
+    <div class='container'>
+      <div class='portraits'></div>
+    </div>
+  </section>
+  <section class='about-casting' id='casting'>
+    <div class='container'>
+      <h2>Casting information</h2>
+      <p>
+        Many product launches, television commercials and advertising roles want more than just a pretty face. We are happy to put forward talented actors and improvisors for your casting requirements. Please contact Kirsty at
+        <a href='mailto:jesters@courttheatre.org.nz'>jesters@courttheatre.org.nz</a>
+        with the brief for your next film, photoshoot, TVC, product launch, or voiceover, and she will be happy to submit people with the right look and the right skills.
+      </p>
+    </div>
+  </section>
+  <section class='about-theatre' id='theatre'>
+    <div class='container'>
+      <h2>The Court Theatre: Entertaining Christchurch since 1971</h2>
+      <p>
+        The Court Theatre is Christchurch’s only, and New Zealand’s foremost, professional theatre company, offering entertainment of the highest quality throughout the year.
+      </p>
+      <p>
+        Founded by Yvette Bromley QSM and Mervyn Thompson in 1971, The Court fast became a central part of the cultural life of Christchurch, the Canterbury region, and New Zealand as a whole, and has gone on to become the most successful arts organisation in New Zealand.
+      </p>
+      <p>
+        For more information, please visit
+        <a href='http://www.courttheatre.org.nz' target='_blank'>
+          the Court Theatre’s own website
+        </a>.
+      </p>
+    </div>
+  </section>
+  <script src='../assets/js/about.js'></script>
+  <footer class='footer'>
+  <a class='logo' href='/'>
+    <i class='icon-crown'></i>
+  </a>
+  <div class='footer-links'>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/events/' title='Your next event'>Your next event</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/events/#packages' title='Packages'>Packages</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/events/#fundraisers' title='Fundraisers'>Fundraisers</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/shows/' title='Our shows'>Our shows</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/shows/#scriptless' title='Scared Scriptless'>Scared Scriptless</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/shows/#past' title='Past shows'>Past shows</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/training/' title='Training'>Training</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/training/#corporate-training' title='Corporate training'>Corporate training</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/training/#workshops' title='Learn to improvise'>Learn to improvise</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/training/#schools' title='Theatre Sports™ in schools'>Theatre Sports™ in schools</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          <a href='http://courtjesters.local/about/' title='Who we are'>Who we are</a>
+        </h3>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/about/#us' title='Meet the Jesters'>Meet the Jesters</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/about/#casting' title='Casting information'>Casting information</a>
+      </li>
+      <li>
+        <a href='http://courtjesters.local/about/#theatre' title='The Court Theatre'>The Court Theatre</a>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <p class='social-media'>
+    <a href='https://www.facebook.com/scaredscriptlessnz'>
+      <i class='fa fa-facebook-square'></i>
+    </a>
+    <a href='http://twitter.com/courtjesters'>
+      <i class='fa fa-twitter'></i>
+    </a>
+    <a href='mailto:jesters@courttheatre.org.nz'>
+      <i class='fa fa-envelope'></i>
+    </a>
+  </p>
+</footer>
+
+</html>
