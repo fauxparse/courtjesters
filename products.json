@@ -35,13 +35,13 @@
   ],
   "products": [
     {
-      "id": "pair-of-knaves",
-      "name": "A Pair of Knaves",
+      "id": "short-and-sweet",
+      "name": "Short and Sweet",
       "summary": "A spontaneous mini-show tailored to your event.",
       "stats": {
         "actors": 2,
         "time": 20,
-        "price": 300
+        "price": "500+"
       },
       "filters": {
         "occasion": [ "birthday", "wedding", "christmas", "prizegiving", "product-launch", "meal" ],
@@ -50,13 +50,13 @@
       }
     },
     {
-      "id": "two-princes",
-      "name": "Two Princes",
+      "id": "perfect-duet",
+      "name": "The Perfect Duet",
       "summary": "A perfect pair of our company's finest.",
       "stats": {
         "actors": 2,
         "time": 35,
-        "price": 500
+        "price": "700+"
       },
       "filters": {
         "guests": [ "small", "medium", "large" ],
@@ -64,13 +64,13 @@
       }
     },
     {
-      "id": "queens-favourites",
-      "name": "The Queen’s Favourites",
-      "summary": "A triple-threat of our most skilled improvisors weave together a 45-minute comedy show.",
+      "id": "triple-wit",
+      "name": "Triple Wit",
+      "summary": "Three of our most skilled improvisers weave together a unique comedy show that’s all about your guests.",
       "stats": {
         "actors": 3,
         "time": 45,
-        "price": 1000
+        "price": "1000+"
       },
       "filters": {
         "occasion": [ "birthday", "wedding", "christmas", "product-launch", "fundraiser" ],
@@ -81,15 +81,30 @@
     {
       "id": "royal-treatment",
       "name": "The Royal Treatment",
-      "summary": "A 5-star, 5-player, modern improvised comedy show.",
+      "summary": "A 5-star, improvised comedy show complete with musical accompaniment.",
       "stats": {
         "actors": 5,
         "time": [60, 80],
-        "price": 1000
+        "price": "2000+"
       },
       "filters": {
         "occasion": [ "birthday", "product-launch", "fundraiser" ],
         "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "extravagant" ]
+      }
+    },
+    {
+      "id": "big-bold-blowout",
+      "name": "The Big Bold Blowout",
+      "summary": "Need something special to celebrate that one off occasion? We can devise and rehearse a personalised event to your unique specifications. We provide the writer, director, actors, costumes, set, props and anything else that’s required.",
+      "stats": {
+        "actors": 5,
+        "time": [60, 80],
+        "price": "5000+"
+      },
+      "filters": {
+        "occasion": [ "birthday", "product-launch", "fundraiser" ],
+        "guests": [ "large", "huge" ],
         "budget": [ "extravagant" ]
       }
     },
@@ -100,7 +115,7 @@
       "stats": {
         "actors": 1,
         "time": "½ day",
-        "price": 800
+        "price": "650+"
       },
       "filters": {
         "occasion": [ "birthday", "christmas", "prizegiving", "product-launch", "fundraiser", "meal" ],
@@ -115,7 +130,7 @@
       "stats": {
         "actors": 1,
         "time": "1 day",
-        "price": 1500
+        "price": "1200+"
       },
       "filters": {
         "occasion": [ "birthday", "christmas", "product-launch", "fundraiser", "meal" ],
@@ -126,11 +141,11 @@
     {
       "id": "mc-wedding",
       "name": "Wedding MC",
-      "summary": "No MC organised for the big day? no problem!",
+      "summary": "No MC organised for the big day? no problem! Up to 5 hours, plus a pre-wedding meeting to plan.",
       "stats": {
         "actors": 1,
-        "time": "1 day",
-        "price": 1500
+        "time": "5 hrs",
+        "price": "750+"
       },
       "filters": {
         "occasion": [ "wedding" ],
@@ -141,11 +156,11 @@
     {
       "id": "wedding-crashers",
       "name": "Wedding Crashers",
-      "summary": "Enliven your reception with a short improvised comedy show.",
+      "summary": "Enliven your reception with some unexpected wedding guests to interact with your guests",
       "stats": {
         "actors": 2,
-        "time": [15,20],
-        "price": 500
+        "time": 45,
+        "price": "600+"
       },
       "filters": {
         "occasion": [ "wedding" ],
@@ -156,11 +171,11 @@
     {
       "id": "worst-waiters",
       "name": "World’s Worst Waiters",
-      "summary": "Watch the looks of disapproval and disbelief on your guests faces turn into utter delight.",
+      "summary": "Our ‘under cover’ actors appear as if they are real waiters but progressively stretch the boundaries of good service. Watch the looks of disapproval and disbelief on your guests’ faces turn into utter delight.",
       "stats": {
         "actors": 2,
-        "time": 120,
-        "price": 400
+        "time": 60,
+        "price": "700+"
       },
       "filters": {
         "occasion": [ "wedding", "christmas", "prizegiving", "meal" ],
@@ -171,11 +186,11 @@
     {
       "id": "wacky-waiters",
       "name": "Wacky Waiters",
-      "summary": "These waiters are completely unfit for the job!",
+      "summary": "These larger than life character waiters are completely unfit for the job and put the ‘vice’ into ‘service’! Start with a comedy entrée with laughs to give you indigestion.",
       "stats": {
         "actors": 2,
-        "time": 120,
-        "price": 400
+        "time": 60,
+        "price": "700+"
       },
       "filters": {
         "occasion": [ "birthday", "wedding", "christmas", "product-launch", "fundraiser", "meal" ],
@@ -186,16 +201,76 @@
     {
       "id": "roam",
       "name": "Costumed Characters",
-      "summary": "Whatever the event, there is a matching character or set of characters that we can provide.",
+      "summary": "Product launches, special birthdays, themed events… whatever the occasion, we have the characters and costumes to interact with your crowd and bring the occasion to life. Price varies based on number of actors and time required.",
       "stats": {
-        "actors": "2+",
+        "actors": "1+",
         "time": "30+",
-        "price": "400+"
+        "price": "300+"
       },
       "filters": {
         "occasion": [ "birthday", "wedding", "christmas", "prizegiving", "product-launch", "fundraiser", "meal" ],
         "guests": [ "small", "medium", "large", "huge" ],
         "budget": [ "thrifty", "extravagant" ]
+      }
+    },
+    {
+      "id": "father-christmas",
+      "name": "Father Christmas & Helper",
+      "summary": "Engaging a large number of small children in a fat suit is quite an art form. Have our Father Christmas, chat to children, hand out presents, or run lolly scrambles, with the help of Mother Christmas or a friendly elf",
+      "stats": {
+        "actors": "2",
+        "time": "60",
+        "price": "700+"
+      },
+      "filters": {
+        "occasion": [ "christmas" ],
+        "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "frugal", "thrifty", "extravagant" ]
+      }
+    },
+    {
+      "id": "bad-santa",
+      "name": "Bad Santa",
+      "summary": "Christmas can be stressful, especially for Santa, who occasionally has a tipple too many but still insists on having the grown-ups sit on his knee (Adults only!)",
+      "stats": {
+        "actors": "2",
+        "time": "60",
+        "price": "750+"
+      },
+      "filters": {
+        "occasion": [ "christmas" ],
+        "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "frugal", "thrifty", "extravagant" ]
+      }
+    },
+    {
+      "id": "christmas-crackups",
+      "name": "Christmas Crack-Ups",
+      "summary": "A pair of our company's finest enliven the festive season with a show that’s all about your guests.",
+      "stats": {
+        "actors": "2",
+        "time": "40",
+        "price": "750+"
+      },
+      "filters": {
+        "occasion": [ "christmas" ],
+        "guests": [ "small", "medium", "large", "huge" ],
+        "budget": [ "frugal", "thrifty", "extravagant" ]
+      }
+    },
+    {
+      "id": "bigger-than-beetles",
+      "name": "Bigger Than Beetles",
+      "summary": "Tune in to the dulcet tones and witty lyrics of a capella duo Bigger Than Beetles",
+      "stats": {
+        "actors": "2",
+        "time": [30,60],
+        "price": "800+"
+      },
+      "filters": {
+        "occasion": [ "birthday", "wedding", "christmas", "prizegiving", "product-launch", "meal" ],
+        "guests": [ "small", "medium", "large" ],
+        "budget": [ "frugal", "thrifty", "extravagant" ]
       }
     }
   ]

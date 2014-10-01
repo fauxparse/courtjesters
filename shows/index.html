@@ -4,36 +4,11 @@
   <meta charset='utf-8'>
   <meta content='width=device-width, initial-scale=1' name='viewport'>
   
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
   <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
-  <link rel='stylesheet' href='../assets/css/normalize.css'>
-<link rel='stylesheet' href='../assets/fonts/fontcustom.css'>
-<link rel='stylesheet' href='../assets/css/style.css'>
-  <script src='../assets/js/jquery-1.8.3.min.js'></script>
-<script src='../assets/js/app.js'></script>
+  <link rel='stylesheet' href='../6561afb9a19b903370e1fdb7e3281d93.css'>
+  <script src='../7807589aab158b5446fecf7333200c64.js'></script>
   <link href='../assets/favicon.ico' rel='shortcut icon'>
   <link href='../assets/apple-touch-icon.png' rel='apple-touch-icon'>
   <title>The Court Jesters</title>
@@ -43,21 +18,21 @@
     <nav>
   <ul>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/' rel='home'>
+      <a href='/' rel='home'>
         <i class='icon-crown'></i>
       </a>
     </li>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/events/' rel='events'>Your next event</a>
+      <a href='/events/' rel='events'>Your next event</a>
     </li>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/shows/' rel='shows'>Our shows</a>
+      <a href='/shows/' rel='shows'>Our shows</a>
     </li>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/training/' rel='training'>Training</a>
+      <a href='/training/' rel='training'>Training</a>
     </li>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/about/' rel='about'>Who we are</a>
+      <a href='/about/' rel='about'>Who we are</a>
     </li>
   </ul>
   <img class='logo' src='../assets/img/jesters-logo.svg'>
@@ -86,15 +61,15 @@
         <small>New Zealand’s longest-running comedy show</small>
       </h2>
       <article>
-        <p>A favourite of Christchurch audiences for over twenty years, Scared Scriptless combines fast-paced, off-the-cuff theatre with just the right amount of audience interaction and the Court Jesters’ own brand of razor-sharp wit. Based on audience suggestions, the players offer a completely new show each night for less than the price of a movie! Tickets $14 / $16.</p>
+        <p>A favourite of Christchurch audiences for almost twenty- five years, Scared Scriptless combines fast-paced, off-the-cuff theatre with just the right amount of audience interaction. Tickets only $14 / $16.</p>
         <p>
           <b>
-            Scared Scriptless plays every Friday and Saturday night (except public holidays, with a short hiatus over the Christmas/New Year period). To book, call the Box Office on 963 0870, or
+            Scared Scriptless plays every Friday and Saturday night (except Good Friday and a short hiatus over the Christmas/New Year period). To book, call the Box Office on 963 0870, or
             <a href='https://www.patronbase.com/_CT/Productions' target='_blank'>book online</a>.
           </b>
         </p>
         <p>
-          With 22 years under our belt as a company, we’ve still never played the same scene twice!
+          With 24 years under our belt as a company, we’ve still never played the same scene twice!
         </p>
       </article>
       <figure>
@@ -112,11 +87,6 @@
           <p>A rapid-fire, off-the-cuff 1930s radio show shaped entirely around audience suggestions to create news, interviews and thrilling serials that never seen – or heard – before. Packed with thrills and spills and complete with live sound effects and music, this loving homage to the golden age of the wireless proved so popular that it was aired on Radio NZ National.</p>
         </article>
         <article>
-          <img src='../assets/img/shows/ammt.jpg'>
-          <h3>Aunty McDuff's Magical Trunk</h3>
-          <p>Ever wondered what your mad old aunty keeps in her trunk? For the three kids in AUNTY MCDUFF’S MAGICAL TRUNK, it’s everything they need to escape the boredom of a rainy day and get carried away on a magical adventure that has them cruising the world in a boat or a plane, defending castles, or riding in wagon trains with cowboys and indians! No two shows are the same as the audience help decide what happens next in a unique adventure in storytelling using the magic of imagination.</p>
-        </article>
-        <article>
           <img src='../assets/img/shows/chatterbox.jpg'>
           <h3>Chatterbox</h3>
           <p>The stars of today are lampooned by the stars of tomorrow as The Court Jesters get up close and personal with local celebrities. After a live interview with Artistic Director Ross Gumbley, four of our top improvisers replay stories from the lives and careers of these famous Cantabrians. Guests include Garry Moore, Margaret Mahy, Steve Gurney, David McPhail and Ruth Dyson.</p>
@@ -125,11 +95,6 @@
           <img src='../assets/img/shows/uncut.jpg'>
           <h3>Scriptless Uncut</h3>
           <p>With the glitz and glamour of a Hollywood awards ceremony, The Jesters romp across genres, styles and the bounds of political correctness to create anything from art-house, melodrama and independent film to schlock horror, science fiction and big-budget blockbusters, armed with only their wits (and audience suggestions) to guide them. SCRIPTLESS UNCUT is a love letter to an industry that shoots too many pictures and not enough actors.</p>
-        </article>
-        <article>
-          <img src='../assets/img/shows/naammt.jpg'>
-          <h3>The New Adventures of Auntie McDuff’s Magical Trunk</h3>
-          <p>Auntie McDuff’s Magical Trunk is back after a successful Kidsfest season in 2008, ready to take audiences on a completely new magical adventure! Using only the old objects in mad Auntie McDuff’s Trunk, three actors set off on an exciting and wonderfully old-fashioned ride – building everything they need along the way!</p>
         </article>
         <article>
           <img src='../assets/img/shows/pulp-william.jpg'>
@@ -168,20 +133,12 @@
           <p>Very, very funny at an early, early time with plenty of audience participation and laughs for all ages in a show that you can take the whole family to see and still have them home in time for bed.</p>
           <p>If you’re scared of Scared Scriptless, The Early Early Late Show is the perfect introduction to the Jesters’ brand of improvised mayhem.</p>
         </article>
-        <article>
-          <img src='../assets/img/shows/marathon.jpg'>
-          <h3>The 30-Hour Improv Marathon</h3>
-          <p>The Jesters celebrated 20 years of Scared Scriptless with 30 hours of non-stop improvised madness.</p>
-          <p>We tip our hats to Daniel Pengelly, Javier Jarquin and over 20 amazing audience members who lasted the whole 30 hours!</p>
-        </article>
       </div>
     </div>
   </section>
-  <script src='../assets/js/images.js'></script>
-<script src='../assets/js/packery.js'></script>
-<script src='../assets/js/shows.js'></script>
+  <script src='../5998a1d1894775038ed4192753d14241.js'></script>
   <footer class='footer'>
-  <a class='logo' href='http://fauxparse.github.io/courtjesters/'>
+  <a class='logo' href='/'>
     <i class='icon-crown'></i>
   </a>
   <div class='footer-links'>

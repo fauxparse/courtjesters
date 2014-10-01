@@ -4,36 +4,11 @@
   <meta charset='utf-8'>
   <meta content='width=device-width, initial-scale=1' name='viewport'>
   
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
   <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
-  <link rel='stylesheet' href='assets/css/normalize.css'>
-<link rel='stylesheet' href='assets/fonts/fontcustom.css'>
-<link rel='stylesheet' href='assets/css/style.css'>
-  <script src='assets/js/jquery-1.8.3.min.js'></script>
-<script src='assets/js/app.js'></script>
+  <link rel='stylesheet' href='6561afb9a19b903370e1fdb7e3281d93.css'>
+  <script src='7807589aab158b5446fecf7333200c64.js'></script>
   <link href='assets/favicon.ico' rel='shortcut icon'>
   <link href='assets/apple-touch-icon.png' rel='apple-touch-icon'>
   <title>The Court Jesters</title>
@@ -43,21 +18,21 @@
     <nav>
   <ul>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/' rel='home'>
+      <a href='/' rel='home'>
         <i class='icon-crown'></i>
       </a>
     </li>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/events/' rel='events'>Your next event</a>
+      <a href='/events/' rel='events'>Your next event</a>
     </li>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/shows/' rel='shows'>Our shows</a>
+      <a href='/shows/' rel='shows'>Our shows</a>
     </li>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/training/' rel='training'>Training</a>
+      <a href='/training/' rel='training'>Training</a>
     </li>
     <li>
-      <a href='http://fauxparse.github.io/courtjesters/about/' rel='about'>Who we are</a>
+      <a href='/about/' rel='about'>Who we are</a>
     </li>
   </ul>
   <img class='logo' src='assets/img/jesters-logo.svg'>
@@ -82,9 +57,9 @@
   <section class='home-intro'>
     <div class='container'>
       <p>
-        <b>You might know the Court Jesters as the guys and girls behind Scared Scriptless, New Zealand’s longest-running comedy show. You might know us as the people who made Derek laugh so hard at the Christmas party that pinot noir came out his nose. You might not recognise us, but we were also the villains that hijacked last year’s product launch, before being foiled at the last minute by a British secret agent (also one of us).</b>
+        <b>The Court Jesters who have brought you Scared Scriptless for the last 24 years can also create a personalised comedy show just for you.</b>
       </p>
-      <p>Whatever else you have in mind, if it’s funny, theatrical, or entertaining, we probably do that, too. Check out our shows, training programmes, and event ideas, then get in touch to talk about how we can help.</p>
+      <p>Whatever the event, if it’s funny, theatrical, or entertaining, then you need the Court Jesters. Check out our shows, training programmes, and event ideas, then get in touch to talk about how we can help.</p>
     </div>
   </section>
   <section class='home-sections'>
@@ -93,30 +68,30 @@
         <i class='section-icon icon-events'></i>
         <div class='bullet-content'>
           <h3>
-            <a href='http://fauxparse.github.io/courtjesters/events/'>Your next event</a>
+            <a href='events/index.html'>Your next event</a>
           </h3>
-          <p>The Court Jesters provide professional event solutions for your unique requirements. From corporate functions and  fundraisers to birthday parties and hens’ nights, the Court Jesters are the only entertainers you’ll ever need.</p>
-          <a class='button' href='http://fauxparse.github.io/courtjesters/events/'>Start planning…</a>
+          <p>The Court Jesters provide professional event solutions for your unique requirements. From corporate functions and fundraisers to birthday parties and hens’ nights, the Court Jesters are the only entertainers you’ll ever need.</p>
+          <a class='button' href='events/index.html'>Start planning…</a>
         </div>
       </article>
       <article class='shows'>
         <i class='section-icon icon-shows'></i>
         <div class='bullet-content'>
           <h3>
-            <a href='http://fauxparse.github.io/courtjesters/shows/'>Our shows</a>
+            <a href='shows/index.html'>Our shows</a>
           </h3>
-          <p>The Court Jesters are practically synonymous with our late-night comedy show Scared Scriptless. But we also  perform Shakespeare, children’s theatre, celebrity chat shows, radio plays, and much more!</p>
-          <a class='button' href='http://fauxparse.github.io/courtjesters/shows/'>Take a seat!</a>
+          <p>The Court Jesters are practically synonymous with our late-night comedy show Scared Scriptless. But we also perform scripted and semi improvised shows as well as long format Scriptless shows on a Saturday night.</p>
+          <a class='button' href='shows/index.html'>Take a look…</a>
         </div>
       </article>
       <article class='training'>
         <i class='section-icon icon-training'></i>
         <div class='bullet-content'>
           <h3>
-            <a href='http://fauxparse.github.io/courtjesters/training/'>Training</a>
+            <a href='training/index.html'>Training</a>
           </h3>
-          <p>We provide top-notch training for presentation skills, as well as workshops, role-plays and interviews. We also support improvisation at the grass roots with our Theatre Sports™ in Schools programme.</p>
-          <a class='button' href='http://fauxparse.github.io/courtjesters/training/'>Find out more…</a>
+          <p>Improvisational skills can readily be applied to address specific needs in the work place or improve team building notch training for your next conference.</p>
+          <a class='button' href='training/index.html'>Find out more…</a>
         </div>
       </article>
     </div>
@@ -125,7 +100,7 @@
     <div class='container'>
       <article>
         <h2>
-          <a href='http://fauxparse.github.io/courtjesters/about/'>Who we are</a>
+          <a href='about/index.html'>Who we are</a>
         </h2>
         <p>Single-origin coffee bitters PBR&B chillwave master cleanse shabby chic, letterpress chia Pitchfork bespoke keytar four loko plaid mixtape put a bird on it. Keytar DIY gluten-free wayfarers Thundercats. Art party Godard photo booth, normcore you probably haven't heard of them meggings try-hard sriracha. Mustache jean shorts gentrify Neutra yr +1 drinking vinegar vinyl. Pop-up occupy ethnic swag sriracha, Echo Park pour-over biodiesel fanny pack. Scenester distillery cray beard Helvetica. Yr single-origin coffee artisan, next level pop-up direct trade umami selfies art party synth keytar organic dreamcatcher Thundercats tofu.</p>
       </article>
@@ -135,7 +110,7 @@
     </div>
   </section>
   <footer class='footer'>
-  <a class='logo' href='http://fauxparse.github.io/courtjesters/'>
+  <a class='logo' href='/'>
     <i class='icon-crown'></i>
   </a>
   <div class='footer-links'>

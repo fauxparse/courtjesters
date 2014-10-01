@@ -1,0 +1,2 @@
+!function(){var t;t=function(){return $(this).closest("figure").addClass("missing-image")},$(function(){return $.getJSON("../jesters.json").done(function(t){var e,n,i,s,a,r,p,d;for(n=$(".portraits"),d=[],r=0,p=t.length;p>r;r++)s=t[r],i="jester-"+s.id,e=$("<article>",{id:s.id,"data-title":s.title}),a=$("<label>",{"for":i}).appendTo(e),a.append($("<img>",{src:"../assets/img/jesters/"+s.id+".jpg"})),a.append($("<h3>",{text:s.name})),a.append($("<h4>",{html:s.tag||"&nbsp;"})),s.title&&a.append($("<h5>",{html:s.title})),d.push(e.appendTo(n));return d})})}.call(this);
+;

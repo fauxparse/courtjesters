@@ -241,7 +241,7 @@
         });
       });
     });
-    $.getJSON("http://fauxparse.github.io/courtjesters/products.json").done(function(data) {
+    $.getJSON("../products.json").done(function(data) {
       Product.refresh(data.products);
       return Filter.enhance(data.filters);
     }).fail(function() {

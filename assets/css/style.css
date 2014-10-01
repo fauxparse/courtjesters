@@ -687,6 +687,8 @@ blockquote.full-width {
     padding: 0.75em 0.809em;
     overflow: auto;
     font-family: "Merriweather Sans", sans-serif; }
+    .product .product-stats ul {
+      margin: 0; }
     .product .product-stats ul li {
       display: inline;
       color: #920058;
@@ -888,9 +890,9 @@ section.shows-past {
       width: 100%;
       height: auto; }
     .about-jesters article h3 {
-      font-size: 85%; }
-    .about-jesters article h4 {
-      font-size: 75%;
+      font-size: 100%; }
+    .about-jesters article h4, .about-jesters article h5 {
+      font-size: 100%;
       text-transform: uppercase;
       opacity: 0.5; }
     @media screen and (min-width: 0) and (max-width: 39.9375em) {
@@ -910,6 +912,18 @@ section.shows-past {
         float: left;
         display: block;
         margin-right: 2.35765%;
+        width: 31.76157%; }
+        .about-jesters article:last-child {
+          margin-right: 0; }
+        .about-jesters article:nth-child(3n) {
+          margin-right: 0; }
+        .about-jesters article:nth-child(3n+1) {
+          clear: left; } }
+    @media screen and (min-width: 53.75em) {
+      .about-jesters article {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
         width: 23.23176%; }
         .about-jesters article:last-child {
           margin-right: 0; }
@@ -917,20 +931,7 @@ section.shows-past {
           margin-right: 0; }
         .about-jesters article:nth-child(4n+1) {
           clear: left; } }
-    @media screen and (min-width: 53.75em) {
-      .about-jesters article {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 14.70196%; }
-        .about-jesters article:last-child {
-          margin-right: 0; }
-        .about-jesters article:nth-child(6n) {
-          margin-right: 0; }
-        .about-jesters article:nth-child(6n+1) {
-          clear: left; } }
     .about-jesters article label {
-      cursor: pointer;
       margin-bottom: 0; }
     .about-jesters article > label {
       display: block;
