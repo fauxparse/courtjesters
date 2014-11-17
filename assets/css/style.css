@@ -516,6 +516,12 @@ blockquote.full-width {
         -ms-transform: scale(1.5);
         -o-transform: scale(1.5);
         transform: scale(1.5); }
+  .footer .phone {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.5em;
+    text-align: center; }
+    .footer .phone a {
+      color: white; }
 
 .home-sections {
   background: rgba(71, 24, 52, 0.1);
@@ -895,6 +901,10 @@ section.shows-past {
       height: auto; }
     .about-jesters article h3 {
       font-size: 100%; }
+    .about-jesters article h4 {
+      min-height: 2.5em; }
+    .about-jesters article h4 + h5 {
+      margin-top: -1.25em; }
     .about-jesters article h4, .about-jesters article h5 {
       font-size: 100%;
       text-transform: uppercase;

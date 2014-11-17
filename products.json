@@ -96,7 +96,7 @@
     {
       "id": "big-bold-blowout",
       "name": "The Big Bold Blowout",
-      "summary": "Need something special to celebrate that one off occasion? We can devise and rehearse a personalised event to your unique specifications. We provide the writer, director, actors, costumes, set, props and anything else that’s required.",
+      "summary": "Need something special to celebrate that one-off occasion? We can devise and rehearse a personalised event to your unique specifications. We provide the writer, director, actors, costumes, set, props and anything else that’s required.",
       "stats": {
         "actors": 5,
         "time": [60, 80],
@@ -171,7 +171,7 @@
     {
       "id": "worst-waiters",
       "name": "World’s Worst Waiters",
-      "summary": "Our ‘under cover’ actors appear as if they are real waiters but progressively stretch the boundaries of good service. Watch the looks of disapproval and disbelief on your guests’ faces turn into utter delight.",
+      "summary": "Our undercover actors initially appear to be real wait staff, but then progressively stretch the boundaries of good service. Watch looks of disapproval and disbelief on your guests’ faces turn into utter delight.",
       "stats": {
         "actors": 2,
         "time": 60,
@@ -186,7 +186,7 @@
     {
       "id": "wacky-waiters",
       "name": "Wacky Waiters",
-      "summary": "These larger than life character waiters are completely unfit for the job and put the ‘vice’ into ‘service’! Start with a comedy entrée with laughs to give you indigestion.",
+      "summary": "These larger-than-life character waiters are clearly completely unfit for the job and put the ‘vice’ into ‘service’! Start your meal off with a cheeky comedy entrée.",
       "stats": {
         "actors": 2,
         "time": 60,
@@ -216,7 +216,7 @@
     {
       "id": "father-christmas",
       "name": "Father Christmas & Helper",
-      "summary": "Engaging a large number of small children in a fat suit is quite an art form. Have our Father Christmas, chat to children, hand out presents, or run lolly scrambles, with the help of Mother Christmas or a friendly elf",
+      "summary": "Engaging a large number of small children from inside a fat suit is quite an art form. Have our Father Christmas chat to children, hand out presents, or run lolly scrambles, all with the help of Mother Christmas (or a friendly elf).",
       "stats": {
         "actors": "2",
         "time": "60",
@@ -231,7 +231,7 @@
     {
       "id": "bad-santa",
       "name": "Bad Santa",
-      "summary": "Christmas can be stressful, especially for Santa, who occasionally has a tipple too many but still insists on having the grown-ups sit on his knee (Adults only!)",
+      "summary": "Christmas can be stressful – especially for Santa, who may occasionally have a tipple too many, but yet still insists on having the grown-ups sit on his knee (adults only!)",
       "stats": {
         "actors": "2",
         "time": "60",
@@ -261,7 +261,7 @@
     {
       "id": "bigger-than-beetles",
       "name": "Bigger Than Beetles",
-      "summary": "Tune in to the dulcet tones and witty lyrics of a capella duo Bigger Than Beetles",
+      "summary": "Tune in to the dulcet tones and witty lyrics of a capella duo Bigger Than Beetles.",
       "stats": {
         "actors": "2",
         "time": [30,60],
