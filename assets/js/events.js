@@ -180,7 +180,7 @@
     ProductCard.prototype.render = function(el) {
       var icon, li, stat, stats, text, title, _i, _len, _ref3, _ref4, _results;
       $("<img>", {
-        src: "http://placehold.it/256x144"
+        src: "../assets/img/products/" + this.product.id + ".jpg"
       }).appendTo(el).wrap("<div class=\"product-image\">");
       title = this.product.name.replace(/(\([^\)]*\))/, "<small>$1</small>");
       $("<div>", {

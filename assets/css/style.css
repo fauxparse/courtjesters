@@ -272,7 +272,7 @@ nav {
       @media screen and (min-width: 40em) {
         nav a[rel="home"] {
           font-size: 2em;
-          padding: 0.25em 0.5em;
+          padding: 0em 0.5em;
           height: 1.5em; } }
   nav a:hover {
     background-color: rgba(95, 0, 57, 0.75);
@@ -304,7 +304,7 @@ nav {
         bottom: 10%; } }
 
 .hero-image {
-  background: black;
+  background: white;
   margin: 0;
   position: relative; }
   .hero-image .splash {
@@ -317,6 +317,20 @@ nav {
     bottom: 0.09375em;
     height: 50%;
     width: auto; }
+
+figure, .product .product-image {
+  position: relative; }
+  figure::after, .product .product-image::after {
+    content: "";
+    position: absolute;
+    top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left: 0em;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.15); }
+
+figure img {
+  display: block; }
 
 .page-title {
   background: black;
@@ -519,7 +533,6 @@ blockquote.full-width {
     text-align: center;
     font-size: 4.5em;
     line-height: 1em;
-    padding: 0.16667em;
     color: white; }
   .home-sections article {
     padding-top: 1em; }
@@ -654,7 +667,6 @@ blockquote.full-width {
   transition: all 0.2s ease-in-out;
   background-color: #f7f7f7;
   border: 1px solid #dddddd;
-  cursor: pointer;
   box-shadow: 0 2px 4px #e6e6e6;
   position: relative; }
   .product:after {
@@ -662,10 +674,11 @@ blockquote.full-width {
     display: table;
     clear: both; }
   .product .product-image {
-    overflow: hidden;
-    max-height: 100px; }
+    border-bottom: 1px solid #dddddd; }
     .product .product-image img {
+      display: block;
       width: 100%;
+      height: auto;
       background: #dbd199; }
   .product .product-header {
     -webkit-transition: all 0.2s ease-in-out;
@@ -707,16 +720,6 @@ blockquote.full-width {
         font-size: .7em;
         display: block;
         font-weight: normal; }
-  .product:hover {
-    background-color: white; }
-    .product:hover .product-image img {
-      background: #e2daac; }
-    .product:hover .product-header {
-      background-color: white; }
-  .product:active {
-    background-color: #f7f7f7; }
-    .product:active .product-header {
-      background-color: #f7f7f7; }
 
 figure img {
   display: block;
@@ -858,6 +861,7 @@ section.shows-past {
     width: 10em;
     text-align: center;
     line-height: 1.5em;
+    height: 1.5em;
     font-size: 200%;
     -webkit-transform: rotate(-30deg);
     -moz-transform: rotate(-30deg);
