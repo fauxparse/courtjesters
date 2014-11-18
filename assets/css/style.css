@@ -304,7 +304,7 @@ nav {
         bottom: 10%; } }
 
 .hero-image {
-  background: white;
+  background: black;
   margin: 0;
   position: relative; }
   .hero-image .splash {
@@ -379,6 +379,7 @@ blockquote.full-width {
   margin: 0;
   padding: 1em 0;
   background-color: #e4b133;
+  color: #59430c;
   border: none; }
   blockquote.full-width p {
     display: block;
@@ -404,7 +405,7 @@ blockquote.full-width {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-weight: normal;
-    color: #866412; }
+    color: rgba(89, 67, 12, 0.5); }
     blockquote.full-width cite::before {
       content: ""; }
 
