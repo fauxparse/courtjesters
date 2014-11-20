@@ -899,15 +899,16 @@ section.shows-past {
       background: #e4b133; }
     .about-jesters article[data-title="Musician"] {
       background: #dddddd; }
+      .about-jesters article[data-title="Musician"] h5 {
+        position: relative;
+        top: -1.25em; }
     .about-jesters article img {
       width: 100%;
       height: auto; }
+    .about-jesters article .text {
+      min-height: 3.75em; }
     .about-jesters article h3 {
       font-size: 100%; }
-    .about-jesters article h4 {
-      min-height: 2.5em; }
-    .about-jesters article h4 + h5 {
-      margin-top: -1.25em; }
     .about-jesters article h4, .about-jesters article h5 {
       font-size: 100%;
       text-transform: uppercase;

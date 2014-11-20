@@ -7,7 +7,7 @@
 
   $(function() {
     return $.getJSON("../jesters.json").done(function(jesters) {
-      var article, container, id, jester, label, _i, _len, _results;
+      var article, container, id, jester, label, text, _i, _len, _results;
       container = $(".portraits");
       _results = [];
       for (_i = 0, _len = jesters.length; _i < _len; _i++) {
@@ -23,14 +23,17 @@
         label.append($("<img>", {
           src: "../assets/img/jesters/" + jester.id + ".jpg"
         }));
-        label.append($("<h3>", {
+        text = $("<div>", {
+          "class": "text"
+        }).appendTo(label);
+        text.append($("<h3>", {
           text: jester.name
         }));
-        label.append($("<h4>", {
+        text.append($("<h4>", {
           html: jester.tag || "&nbsp;"
         }));
         if (jester.title) {
-          label.append($("<h5>", {
+          text.append($("<h5>", {
             html: jester.title
           }));
         }
