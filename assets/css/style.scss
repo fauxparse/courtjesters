@@ -60,11 +60,11 @@ nav {
     }
 
     &[rel="home"] {
-      color: $nav-highlight-color !important;
+      color: $nav-logo-color !important;
       // font-weight: bold;
       @include media($medium-screen) {
         font-size: 2em;
-        padding: 0.25em 0.5em;
+        padding: 0em 0.5em;
         height: 1.5em;
       }
     }
@@ -120,6 +120,26 @@ nav {
   }
 }
 
+%vignette {
+  position: relative;
+
+  &::after {
+    content: "";
+    @include position(absolute, 0em 0em 0em 0em);
+    box-shadow: inset 0 0 20px rgba(black, 0.15);
+  }
+}
+
+figure {
+  // @extend %vignette;
+
+  border-bottom: 1px solid #999;
+
+  img {
+    display: block;
+  }
+}
+
 .page-title {
   background: black;
   color: white;
@@ -171,7 +191,8 @@ section {
 blockquote.full-width {
   margin: 0;
   padding: 1em 0;
-  background-color: $gold;
+  background-color: $pull-quote-background;
+  color: $pull-quote-color;
   border: none;
 
   @mixin blockquote-element($scale) {
@@ -186,10 +207,10 @@ blockquote.full-width {
   p {
     @include blockquote-element(1.5);
     font-style: italic;
-    color: darken($gold, 35);
+    color: $pull-quote-color;
 
     em {
-      color: black;
+      color: $pull-quote-bold;
       font-weight: bold;
     }
   }
@@ -199,7 +220,7 @@ blockquote.full-width {
     font-family: $sans-serif;
     font-style: normal;
     @include all-caps;
-    color: darken($gold, 25);
+    color: rgba($pull-quote-color, 0.5);
 
     &::before {
       content: "";
@@ -319,6 +340,15 @@ blockquote.full-width {
       }
     }
   }
+
+  .phone {
+    font-family: $sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    a {
+      color: white;
+    }
+  }
 }
 
 .home-sections {
@@ -342,7 +372,6 @@ blockquote.full-width {
     text-align: center;
     font-size: $icon-bullet-size * 0.75;
     line-height: 1em;
-    padding: (1em)/6;
     color: white;
   }
 
@@ -498,16 +527,19 @@ blockquote.full-width {
   @include transition (all 0.2s ease-in-out);
   background-color: $product-background;
   border: $product-border;
-  cursor: pointer;
+  // cursor: pointer;
   box-shadow: 0 2px 4px darken($base-background-color, 10);
   position: relative;
 
   .product-image {
-    overflow: hidden;
-    max-height: 100px;
+    border-bottom: $product-border;
+
+    @extend %vignette;
 
     img {
+      display: block;
       width: 100%;
+      height: auto;
       // @include transition (all 0.2s ease-in-out);
       background: $product-image-background;
     }
@@ -538,6 +570,10 @@ blockquote.full-width {
     overflow: auto;
     font-family: $sans-serif;
 
+    ul {
+      margin: 0;
+    }
+
     ul li {
       display: inline;
       color: $product-stats-color;
@@ -565,25 +601,25 @@ blockquote.full-width {
     }
   }
 
-  &:hover {
-    background-color: $product-hover-background;
-
-    .product-image img {
-      background: $product-image-hover-background;
-    }
-
-    .product-header {
-      background-color: $product-hover-background;
-    }
-  }
-
-  &:active {
-    background-color: $product-background;
-
-    .product-header {
-      background-color: $product-background;
-    }
-  }
+  // &:hover {
+  //   background-color: $product-hover-background;
+  //
+  //   .product-image img {
+  //     background: $product-image-hover-background;
+  //   }
+  //
+  //   .product-header {
+  //     background-color: $product-hover-background;
+  //   }
+  // }
+  //
+  // &:active {
+  //   background-color: $product-background;
+  //
+  //   .product-header {
+  //     background-color: $product-background;
+  //   }
+  // }
 }
 
 figure {
@@ -745,6 +781,7 @@ section.shows-past {
     width: 10em;
     text-align: center;
     line-height: 1.5em;
+    height: 1.5em;
     font-size: 200%;
     @include transform(rotate(-30deg));
     pointer-events: none;
@@ -774,6 +811,11 @@ section.shows-past {
 
     &[data-title="Musician"] {
       background: $light-gray;
+
+      h5 {
+        position: relative;
+        top: -1.25em;
+      }
     }
 
     img {
@@ -781,12 +823,16 @@ section.shows-past {
       height: auto;
     }
 
-    h3 {
-      font-size: 85%;
+    .text {
+      min-height: 3.75em;
     }
 
-    h4 {
-      font-size: 75%;
+    h3 {
+      font-size: 100%;
+    }
+
+    h4, h5 {
+      font-size: 100%;
       text-transform: uppercase;
       opacity: 0.5;
     }
@@ -797,17 +843,17 @@ section.shows-past {
     }
 
     @include media(min-width $medium-screen max-width ($large-screen - em(1px))) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+
+    @include media($large-screen) {
       @include span-columns(3);
       @include omega(4n);
     }
 
-    @include media($large-screen) {
-      @include span-columns(2);
-      @include omega(6n);
-    }
-
     label {
-      cursor: pointer;
+      // cursor: pointer;
       margin-bottom: 0;
     }
 

@@ -82,7 +82,7 @@ class ProductCard extends Spine.Controller
     @render $("<div>").addClass("product").appendTo(@el)
 
   render: (el) ->
-    $("<img>", src: "http://placehold.it/256x144")
+    $("<img>", src: "../assets/img/products/#{@product.id}.jpg")
       .appendTo(el).wrap("<div class=\"product-image\">")
     title = @product.name.replace(/(\([^\)]*\))/, "<small>$1</small>")
     $("<div>", class: "product-header", html: title).appendTo(el)
@@ -112,7 +112,7 @@ $ ->
       container.packery
         itemSelector: ".product-wrapper"
 
-  $.getJSON("/products.json")
+  $.getJSON("../products.json")
     .done (data) =>
       Product.refresh data.products
       Filter.enhance data.filters

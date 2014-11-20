@@ -3,73 +3,73 @@
     "id": "kirsty",
     "name": "Kirsty Gillespie",
     "title": "Jesters Manager",
-    "tag": ""
+    "tag": "Bawdy Raconteur"
   },
   {
     "id": "dan",
     "name": "Dan Bain",
     "title": "Artistic Director",
-    "tag": ""
+    "tag": "Comedic Gentleman"
   },
   {
     "id": "alice",
     "name": "Alice Canton",
-    "tag": ""
+    "tag": "Random Act Provocateur"
   },
   {
     "id": "andrew",
     "name": "Andrew Todd",
-    "tag": ""
+    "tag": "Pop Culture Savant"
   },
   {
     "id": "ben",
     "name": "Ben Allan",
-    "tag": ""
+    "tag": "Dry White Satirist"
   },
   {
     "id": "brendon",
     "name": "Brendon Bennetts",
-    "tag": ""
+    "tag": "Master Storyteller"
   },
   {
     "id": "pengelly",
     "name": "Daniel Pengelly",
-    "tag": ""
+    "tag": "Flirtatious Rogue Agent"
   },
   {
     "id": "derek",
     "name": "Derek Flores",
-    "tag": ""
+    "tag": "Canadian Comedy Dynamo"
   },
   {
     "id": "emma",
     "name": "Emma Brittenden",
-    "tag": ""
+    "tag": "Brain-Melting Surrealist"
   },
   {
     "id": "henri",
     "name": "Henri Nelis",
-    "tag": ""
+    "tag": "Jack of Tall Trades"
   },
   {
     "id": "jared",
     "name": "Jared Corbin",
-    "tag": ""
+    "tag": "Veteran Charmer"
   },
   {
     "id": "jarred",
     "name": "Jarred Skelton",
-    "tag": ""
+    "tag": "King of Quips"
   },
   {
     "id": "jeff",
     "name": "Jeff Clark",
-    "tag": ""
+    "tag": "Wordplay Maestro"
   },
   {
     "id": "kathleen",
     "name": "Kathleen Burns",
-    "tag": ""
+    "tag": "Femme Fatale of Funny"
   },
   {
     "id": "lizzie",
@@ -79,22 +79,27 @@
   {
     "id": "matt",
     "name": "Matt Powell",
-    "tag": ""
+    "tag": "Nerd Chic Sophisticate"
   },
   {
     "id": "robbie",
     "name": "Robbie Hunt",
-    "tag": ""
+    "tag": "Hard Man of Comedy"
+  },
+  {
+    "id": "rhiannon",
+    "name": "Rhiannon McCall",
+    "tag": "Improv Ingenue"
   },
   {
     "id": "scott",
     "name": "Scott Koorey",
-    "tag": ""
+    "tag": "Ideas Engineer"
   },
   {
     "id": "vanessa",
     "name": "Vanessa Wells",
-    "tag": ""
+    "tag": "Elegance Incarnate"
   },
   {
     "id": "andy",

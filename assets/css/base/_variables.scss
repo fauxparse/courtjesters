@@ -24,6 +24,16 @@ $light-green: #E6EFC2;
 $purple: #5f0039;
 $gold: #e4b133;
 
+// $blue: #477DCA;
+// $dark-gray: #333;
+// $medium-gray: #999;
+// $light-gray: #DDD;
+// $light-red: #FBE3E4;
+// $light-yellow: #FFF6BF;
+// $light-green: #E6EFC2;
+// $purple: #DA2128;
+// $gold: #e4b133;
+
 // Background Color
 $base-background-color: white;
 $highlighted-section-background: transparentize(desaturate($purple, 50), .9);
@@ -62,5 +72,14 @@ $nav-text-color: white;
 $nav-highlight-color: $gold;
 $nav-hover-background: rgba($nav-background-color, 0.75);
 $nav-active-background: rgba($nav-background-color, 0.95);
+$nav-logo-color: $nav-highlight-color;
+// $nav-logo-color: white;
+
+$pull-quote-background: $gold;
+$pull-quote-color: darken($gold, 35);
+$pull-quote-bold: black;
+// $pull-quote-background: #333;
+// $pull-quote-color: #eee;
+// $pull-quote-bold: white;
 
 $sections: home events shows training jesters
