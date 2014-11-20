@@ -35,21 +35,6 @@
   ],
   "products": [
     {
-      "id": "short-and-sweet",
-      "name": "Short and Sweet",
-      "summary": "A spontaneous mini-show tailored to your event.",
-      "stats": {
-        "actors": 2,
-        "time": 20,
-        "price": "500+"
-      },
-      "filters": {
-        "occasion": [ "birthday", "wedding", "christmas", "prizegiving", "product-launch", "meal" ],
-        "guests": [ "small", "medium", "large" ],
-        "budget": [ "frugal" ]
-      }
-    },
-    {
       "id": "perfect-duet",
       "name": "The Perfect Duet",
       "summary": "A perfect pair of our company's finest.",
@@ -211,36 +196,6 @@
         "occasion": [ "birthday", "wedding", "christmas", "prizegiving", "product-launch", "fundraiser", "meal" ],
         "guests": [ "small", "medium", "large", "huge" ],
         "budget": [ "thrifty", "extravagant" ]
-      }
-    },
-    {
-      "id": "father-christmas",
-      "name": "Father Christmas & Helper",
-      "summary": "Engaging a large number of small children from inside a fat suit is quite an art form. Have our Father Christmas chat to children, hand out presents, or run lolly scrambles, all with the help of Mother Christmas (or a friendly elf).",
-      "stats": {
-        "actors": "2",
-        "time": "60",
-        "price": "700+"
-      },
-      "filters": {
-        "occasion": [ "christmas" ],
-        "guests": [ "small", "medium", "large", "huge" ],
-        "budget": [ "frugal", "thrifty", "extravagant" ]
-      }
-    },
-    {
-      "id": "bad-santa",
-      "name": "Bad Santa",
-      "summary": "Christmas can be stressful – especially for Santa, who may occasionally have a tipple too many, but yet still insists on having the grown-ups sit on his knee (adults only!)",
-      "stats": {
-        "actors": "2",
-        "time": "60",
-        "price": "750+"
-      },
-      "filters": {
-        "occasion": [ "christmas" ],
-        "guests": [ "small", "medium", "large", "huge" ],
-        "budget": [ "frugal", "thrifty", "extravagant" ]
       }
     },
     {
