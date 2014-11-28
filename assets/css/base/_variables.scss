@@ -23,6 +23,7 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 $purple: #5f0039;
 $gold: #e4b133;
+$red: #DA2128;
 
 // $blue: #477DCA;
 // $dark-gray: #333;
@@ -36,11 +37,11 @@ $gold: #e4b133;
 
 // Background Color
 $base-background-color: white;
-$highlighted-section-background: transparentize(desaturate($purple, 50), .9);
+$highlighted-section-background: transparentize(desaturate($red, 50), .9);
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $purple;
+$base-accent-color: $red;
 
 // Link Colors
 $base-link-color: $base-accent-color;
@@ -67,7 +68,7 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
 
-$nav-background-color: $purple;
+$nav-background-color: $red;
 $nav-text-color: white;
 $nav-highlight-color: $gold;
 $nav-hover-background: rgba($nav-background-color, 0.75);

@@ -28,7 +28,7 @@ nav {
     z-index: 10;
   }
 
-  background: rgba($nav-background-color, 0.75);
+  background: rgba($nav-background-color, 0.875);
   line-height: 1em;
   color: white;
   text-transform: uppercase;
@@ -229,7 +229,7 @@ blockquote.full-width {
 }
 
 .footer {
-  $footer-background: desaturate(darken(purple, 10), 70);
+  $footer-background: darken(desaturate($red, 70), 30);
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, .6);
   $footer-disclaimer-color: transparentize($footer-color, .6);
@@ -379,9 +379,9 @@ blockquote.full-width {
     padding-top: 1em;
   }
 
-  article:nth-child(1) .section-icon { background-color: $base-accent-color; }
-  article:nth-child(2) .section-icon { background-color: adjust-hue($base-accent-color, -45); }
-  article:nth-child(3) .section-icon { background-color: adjust-hue($base-accent-color, -135); }
+  article:nth-child(1) .section-icon { background-color: desaturate($base-accent-color, 50); }
+  article:nth-child(2) .section-icon { background-color: desaturate(adjust-hue($base-accent-color, -45), 50); }
+  article:nth-child(3) .section-icon { background-color: desaturate(adjust-hue($base-accent-color, -135), 50); }
 
   h3 {
     margin-top: 0.5em;
