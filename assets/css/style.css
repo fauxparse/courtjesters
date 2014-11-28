@@ -7,7 +7,7 @@ a.button,
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #5f0039;
+  background-color: #da2128;
   border-radius: 0.1875em;
   color: white;
   display: inline-block;
@@ -19,7 +19,7 @@ input[type="submit"] {
   a.button:hover,
   button:hover,
   input[type="submit"]:hover {
-    background-color: #13000b;
+    background-color: #98171c;
     color: white; }
 
 body {
@@ -63,12 +63,12 @@ a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #5f0039;
+  color: #da2128;
   text-decoration: none; }
   a:hover {
-    color: #13000b; }
+    color: #98171c; }
   a:active, a:focus {
-    color: #13000b;
+    color: #98171c;
     outline: none; }
 
 hr {
@@ -140,8 +140,8 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, .search-tools .filter > div:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #5f0039;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(70, 0, 42, 0.7);
+    border-color: #da2128;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(196, 30, 36, 0.7);
     outline: none; }
 
 textarea {
@@ -227,7 +227,7 @@ nav {
   margin: 0;
   font-family: "Merriweather Sans", sans-serif;
   position: relative;
-  background: rgba(95, 0, 57, 0.75);
+  background: rgba(218, 33, 40, 0.875);
   line-height: 1em;
   color: white;
   text-transform: uppercase;
@@ -258,7 +258,7 @@ nav {
     text-decoration: none;
     display: block;
     padding: 0.25em 1em;
-    text-shadow: 0 1px 0 rgba(95, 0, 57, 0.85);
+    text-shadow: 0 1px 0 rgba(218, 33, 40, 0.85);
     -webkit-transition: background-color 0.2s ease;
     -moz-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease; }
@@ -275,18 +275,18 @@ nav {
           padding: 0em 0.5em;
           height: 1.5em; } }
   nav a:hover {
-    background-color: rgba(95, 0, 57, 0.75);
+    background-color: rgba(218, 33, 40, 0.75);
     color: white; }
   [data-page="home"] nav a[rel="home"] {
-    background-color: rgba(95, 0, 57, 0.95); }
+    background-color: rgba(218, 33, 40, 0.95); }
   [data-page="events"] nav a[rel="events"] {
-    background-color: rgba(95, 0, 57, 0.95); }
+    background-color: rgba(218, 33, 40, 0.95); }
   [data-page="shows"] nav a[rel="shows"] {
-    background-color: rgba(95, 0, 57, 0.95); }
+    background-color: rgba(218, 33, 40, 0.95); }
   [data-page="training"] nav a[rel="training"] {
-    background-color: rgba(95, 0, 57, 0.95); }
+    background-color: rgba(218, 33, 40, 0.95); }
   [data-page="jesters"] nav a[rel="jesters"] {
-    background-color: rgba(95, 0, 57, 0.95); }
+    background-color: rgba(218, 33, 40, 0.95); }
   nav .logo {
     position: absolute;
     right: 1em;
@@ -413,7 +413,7 @@ blockquote.full-width {
 
 .footer {
   margin: 0;
-  background: #321b32;
+  background: #332f2f;
   padding: 1.5em 1.618em 3em;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 0.9em; }
@@ -527,7 +527,7 @@ blockquote.full-width {
       color: white; }
 
 .home-sections {
-  background: rgba(71, 24, 52, 0.1);
+  background: rgba(155, 96, 98, 0.1);
   overflow: auto;
   margin-bottom: 1.5em; }
   .home-sections .container {
@@ -535,7 +535,7 @@ blockquote.full-width {
   .home-sections .section-icon {
     display: block;
     margin: 0 auto;
-    background-color: #5f0039;
+    background-color: #da2128;
     border-radius: 50%;
     width: 1.33333em;
     height: 1.33333em;
@@ -546,11 +546,11 @@ blockquote.full-width {
   .home-sections article {
     padding-top: 1em; }
   .home-sections article:nth-child(1) .section-icon {
-    background-color: #5f0039; }
+    background-color: #9b6062; }
   .home-sections article:nth-child(2) .section-icon {
-    background-color: #3e005f; }
+    background-color: #9b608f; }
   .home-sections article:nth-child(3) .section-icon {
-    background-color: #00515f; }
+    background-color: #60719b; }
   .home-sections h3 {
     margin-top: 0.5em;
     text-align: center; }
@@ -616,7 +616,7 @@ blockquote.full-width {
       margin-right: 0; } }
 
 .search-tools {
-  background: rgba(71, 24, 52, 0.1); }
+  background: rgba(155, 96, 98, 0.1); }
   .search-tools:after {
     content: "";
     display: table;
@@ -651,7 +651,7 @@ blockquote.full-width {
       padding: 0.4em 0.5em; }
       .search-tools .filter button:hover {
         color: white;
-        background: #5f0039; }
+        background: #da2128; }
     .search-tools .filter .hide-options {
       margin-bottom: 0; }
       .search-tools .filter .hide-options ol, .search-tools .filter .hide-options button {
@@ -713,7 +713,7 @@ blockquote.full-width {
       margin: 0; }
     .product .product-stats ul li {
       display: inline;
-      color: #920058;
+      color: #e44a50;
       font-weight: 800;
       font-size: 1.2em;
       float: left;
@@ -757,7 +757,7 @@ section.shows-scriptless figure {
     margin-right: 0; }
 
 section.shows-past {
-  background: rgba(71, 24, 52, 0.1); }
+  background: rgba(155, 96, 98, 0.1); }
   section.shows-past:after {
     content: "";
     display: table;
@@ -779,7 +779,7 @@ section.shows-past {
       font-weight: normal;
       font-size: 100%;
       margin: 1em 0 0.5em;
-      color: #5f0039; }
+      color: #da2128; }
     section.shows-past article blockquote p {
       font-size: 100%;
       margin-bottom: 0.5em; }
@@ -807,7 +807,7 @@ section.shows-past {
       height: 1em; } }
 
 [data-page="training"] section.training-workshops {
-  background: rgba(71, 24, 52, 0.1); }
+  background: rgba(155, 96, 98, 0.1); }
 @media screen and (min-width: 40em) {
   [data-page="training"] section article {
     float: left;
@@ -886,7 +886,7 @@ section.shows-past {
   content: "Missing text"; }
 
 .about-jesters {
-  background: #5f0039; }
+  background: #da2128; }
   .about-jesters .container {
     padding-bottom: 1em; }
   .about-jesters article {
@@ -979,7 +979,7 @@ section.shows-past {
         margin-right: 0; } }
 
 .about-casting {
-  background: rgba(71, 24, 52, 0.1); }
+  background: rgba(155, 96, 98, 0.1); }
 
 .modal-background {
   -webkit-transition: opacity 0.25s ease;
