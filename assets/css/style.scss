@@ -10,7 +10,7 @@ body {
   padding: 0;
 
   @include media($medium-screen) {
-    padding-top: 3em;
+    border-top: 3em solid $base-accent-color;
   }
 }
 
@@ -28,7 +28,7 @@ nav {
     z-index: 10;
   }
 
-  background: rgba($nav-background-color, 0.875);
+  background: $base-accent-color;
   line-height: 1em;
   color: white;
   text-transform: uppercase;
@@ -38,7 +38,16 @@ nav {
     margin-top: 0;
     margin-bottom: 0;
     @include outer-container;
-    padding: 0 ($gutter - 1em);
+    padding: 0;
+
+  }
+
+  @include media($medium-screen) {
+    background: rgba($nav-background-color, 0.875);
+
+    ul {
+      padding: 0 ($gutter - 1em);
+    }
   }
 
   li {
@@ -365,7 +374,7 @@ blockquote.full-width {
   .section-icon {
     display: block;
     margin: 0 auto;
-    background-color: $base-accent-color;
+    background-color: $gold;
     border-radius: 50%;
     width: (4em)/3;
     height: (4em)/3;
@@ -379,9 +388,9 @@ blockquote.full-width {
     padding-top: 1em;
   }
 
-  article:nth-child(1) .section-icon { background-color: desaturate($base-accent-color, 50); }
-  article:nth-child(2) .section-icon { background-color: desaturate(adjust-hue($base-accent-color, -45), 50); }
-  article:nth-child(3) .section-icon { background-color: desaturate(adjust-hue($base-accent-color, -135), 50); }
+  // article:nth-child(1) .section-icon { background-color: desaturate($base-accent-color, 50); }
+  // article:nth-child(2) .section-icon { background-color: desaturate(adjust-hue($base-accent-color, -45), 50); }
+  // article:nth-child(3) .section-icon { background-color: desaturate(adjust-hue($base-accent-color, -135), 50); }
 
   h3 {
     margin-top: 0.5em;
@@ -392,16 +401,16 @@ blockquote.full-width {
     display: block;
     text-align: center;
     background: white;
-    border: 1px solid transparentize($purple, .75);
-    color: $purple;
+    border: 1px solid transparentize($base-accent-color, .75);
+    color: $base-accent-color;
     font-weight: normal;
     background-color: transparentize(white, 0.5);
 
     @include transition(border-color 0.2s ease-out, background 0.3s ease-out);
 
     &:hover {
-      color: $purple;
-      border-color: $purple;
+      color: $base-accent-color;
+      border-color: $base-accent-color;
       background-color: transparentize(white, 0.25);
     }
   }

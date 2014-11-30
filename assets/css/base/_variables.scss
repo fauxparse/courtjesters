@@ -71,8 +71,8 @@ $form-font-family: $base-font-family;
 $nav-background-color: $red;
 $nav-text-color: white;
 $nav-highlight-color: $gold;
-$nav-hover-background: rgba($nav-background-color, 0.75);
-$nav-active-background: rgba($nav-background-color, 0.95);
+$nav-hover-background: rgba(darken($nav-background-color, 5), 0.75);
+$nav-active-background: rgba(darken($nav-background-color, 10), 0.95);
 $nav-logo-color: $nav-highlight-color;
 // $nav-logo-color: white;
 
