@@ -221,13 +221,13 @@ body {
   padding: 0; }
   @media screen and (min-width: 40em) {
     body {
-      padding-top: 3em; } }
+      border-top: 3em solid #da2128; } }
 
 nav {
   margin: 0;
   font-family: "Merriweather Sans", sans-serif;
   position: relative;
-  background: rgba(218, 33, 40, 0.875);
+  background: #da2128;
   line-height: 1em;
   color: white;
   text-transform: uppercase;
@@ -246,11 +246,16 @@ nav {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 0.618em; }
+    padding: 0; }
     nav ul:after {
       content: "";
       display: table;
       clear: both; }
+  @media screen and (min-width: 40em) {
+    nav {
+      background: rgba(218, 33, 40, 0.875); }
+      nav ul {
+        padding: 0 0.618em; } }
   nav li {
     display: inline; }
   nav a {
@@ -275,18 +280,18 @@ nav {
           padding: 0em 0.5em;
           height: 1.5em; } }
   nav a:hover {
-    background-color: rgba(218, 33, 40, 0.75);
+    background-color: rgba(196, 30, 36, 0.75);
     color: white; }
   [data-page="home"] nav a[rel="home"] {
-    background-color: rgba(218, 33, 40, 0.95); }
+    background-color: rgba(174, 26, 32, 0.95); }
   [data-page="events"] nav a[rel="events"] {
-    background-color: rgba(218, 33, 40, 0.95); }
+    background-color: rgba(174, 26, 32, 0.95); }
   [data-page="shows"] nav a[rel="shows"] {
-    background-color: rgba(218, 33, 40, 0.95); }
+    background-color: rgba(174, 26, 32, 0.95); }
   [data-page="training"] nav a[rel="training"] {
-    background-color: rgba(218, 33, 40, 0.95); }
+    background-color: rgba(174, 26, 32, 0.95); }
   [data-page="jesters"] nav a[rel="jesters"] {
-    background-color: rgba(218, 33, 40, 0.95); }
+    background-color: rgba(174, 26, 32, 0.95); }
   nav .logo {
     position: absolute;
     right: 1em;
@@ -535,7 +540,7 @@ blockquote.full-width {
   .home-sections .section-icon {
     display: block;
     margin: 0 auto;
-    background-color: #da2128;
+    background-color: #e4b133;
     border-radius: 50%;
     width: 1.33333em;
     height: 1.33333em;
@@ -545,12 +550,6 @@ blockquote.full-width {
     color: white; }
   .home-sections article {
     padding-top: 1em; }
-  .home-sections article:nth-child(1) .section-icon {
-    background-color: #9b6062; }
-  .home-sections article:nth-child(2) .section-icon {
-    background-color: #9b608f; }
-  .home-sections article:nth-child(3) .section-icon {
-    background-color: #60719b; }
   .home-sections h3 {
     margin-top: 0.5em;
     text-align: center; }
@@ -558,16 +557,16 @@ blockquote.full-width {
     display: block;
     text-align: center;
     background: white;
-    border: 1px solid rgba(95, 0, 57, 0.25);
-    color: #5f0039;
+    border: 1px solid rgba(218, 33, 40, 0.25);
+    color: #da2128;
     font-weight: normal;
     background-color: rgba(255, 255, 255, 0.5);
     -webkit-transition: border-color 0.2s ease-out, background 0.3s ease-out;
     -moz-transition: border-color 0.2s ease-out, background 0.3s ease-out;
     transition: border-color 0.2s ease-out, background 0.3s ease-out; }
     .home-sections .button:hover {
-      color: #5f0039;
-      border-color: #5f0039;
+      color: #da2128;
+      border-color: #da2128;
       background-color: rgba(255, 255, 255, 0.75); }
   @media screen and (min-width: 40em) {
     .home-sections {
