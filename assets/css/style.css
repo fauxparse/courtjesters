@@ -530,6 +530,8 @@ blockquote.full-width {
     text-align: center; }
     .footer .phone a {
       color: white; }
+  .footer .address, .footer .logo span {
+    display: none; }
 
 .home-sections {
   background: rgba(155, 96, 98, 0.1);
