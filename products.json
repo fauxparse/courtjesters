@@ -35,6 +35,21 @@
   ],
   "products": [
     {
+      "id": "short-and-sweet",
+      "name": "Short and Sweet",
+      "summary": "A spontaneous mini-show tailored to your event.",
+      "stats": {
+        "actors": 2,
+        "time": 20,
+        "price": "500+"
+      },
+      "filters": {
+        "occasion": [ "birthday", "wedding", "christmas", "prizegiving", "product-launch", "meal" ],
+        "guests": [ "small", "medium", "large" ],
+        "budget": [ "frugal" ]
+      }
+    },
+    {
       "id": "perfect-duet",
       "name": "The Perfect Duet",
       "summary": "A perfect pair of our company's finest.",
