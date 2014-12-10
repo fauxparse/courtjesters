@@ -1,47 +1,48 @@
-%footer.footer
+%footer.footer{itemscope: true, itemtype: "http://schema.org/Organization"}
   %a.logo{href: "/"}
     %i.icon-crown
+    %span{itemprop: "name"} The Court Jesters
   .footer-links
     %ul
       %li
         %h3
-          %a{href: "http://courtjesters.local/events/", title: "Your next event"} Your next event
+          %a{href: "<!-- @path /events/index.haml -->", title: "Your next event"} Your next event
       %li
-        %a{href: "http://courtjesters.local/events/#packages", title: "Packages"} Packages
+        %a{href: "<!-- @path /events/index.haml -->#packages", title: "Packages"} Packages
       %li
-        %a{href: "http://courtjesters.local/events/#fundraisers", title: "Fundraisers"} Fundraisers
+        %a{href: "<!-- @path /events/index.haml -->#fundraisers", title: "Fundraisers"} Fundraisers
       -# %li
       -#   %a{href: "http://courtjesters.local/events/#photos", title: "Photo gallery"} Photo gallery
     %ul
       %li
         %h3
-          %a{href: "http://courtjesters.local/shows/", title: "Our shows"} Our shows
+          %a{href: "<!-- @path /shows/index.haml -->", title: "Our shows"} Our shows
       -# %li
-      -#   %a{href: "http://courtjesters.local/shows/#upcoming", title: "Upcoming shows"} Upcoming shows
+      -#   %a{href: "<!-- @path /shows/index.haml -->#upcoming", title: "Upcoming shows"} Upcoming shows
       %li
-        %a{href: "http://courtjesters.local/shows/#scriptless", title: "Scared Scriptless"} Scared Scriptless
+        %a{href: "<!-- @path /shows/index.haml -->#scriptless", title: "Scared Scriptless"} Scared Scriptless
       %li
-        %a{href: "http://courtjesters.local/shows/#past", title: "Past shows"} Past shows
+        %a{href: "<!-- @path /shows/index.haml -->#past", title: "Past shows"} Past shows
     %ul
       %li
         %h3
-          %a{href: "http://courtjesters.local/training/", title: "Training"} Training
+          %a{href: "<!-- @path /training/index.haml -->", title: "Training"} Training
       %li
-        %a{href: "http://courtjesters.local/training/#corporate-training", title: "Corporate training"} Corporate training
+        %a{href: "<!-- @path /training/index.haml -->#corporate-training", title: "Corporate training"} Corporate training
       %li
-        %a{href: "http://courtjesters.local/training/#workshops", title: "Learn to improvise"} Learn to improvise
+        %a{href: "<!-- @path /training/index.haml -->#workshops", title: "Learn to improvise"} Learn to improvise
       %li
-        %a{href: "http://courtjesters.local/training/#schools", title: "Theatre Sports™ in schools"} Theatre Sports™ in schools
+        %a{href: "<!-- @path /training/index.haml -->#schools", title: "Theatre Sports™ in schools"} Theatre Sports™ in schools
     %ul
       %li
         %h3
-          %a{href: "http://courtjesters.local/about/", title: "Who we are"} Who we are
+          %a{href: "<!-- @path /about/index.haml -->", title: "Who we are"} Who we are
       %li
-        %a{href: "http://courtjesters.local/about/#us", title: "Meet the Jesters"} Meet the Jesters
+        %a{href: "<!-- @path /about/index.haml -->#us", title: "Meet the Jesters"} Meet the Jesters
       %li
-        %a{href: "http://courtjesters.local/about/#casting", title: "Casting information"} Casting information
+        %a{href: "<!-- @path /about/index.haml -->#casting", title: "Casting information"} Casting information
       %li
-        %a{href: "http://courtjesters.local/about/#theatre", title: "The Court Theatre"} The Court Theatre
+        %a{href: "<!-- @path /about/index.haml -->#theatre", title: "The Court Theatre"} The Court Theatre
   %hr/
   %p.social-media
     %a{href: "https://www.facebook.com/scaredscriptlessnz"}
@@ -51,4 +52,9 @@
     %a{href: "mailto:jesters@courttheatre.org.nz"}
       %i.fa.fa-envelope
   %p.phone
-    %a{href: "tel:021374956"} 021 374 956
+    %a{href: "tel:021374956", itemprop: "telephone"} 021 374 956
+  %p.address{itemprop: "address", itemscope: true, itemtype: "http://schema.org/PostalAddress"}
+    %span
+    %span{itemprop: "streetAddress"} Bernard Street
+    %span{itemprop: "addressLocality"} Christchurch
+    %span{itemprop: "addressCountry"} New Zealand
