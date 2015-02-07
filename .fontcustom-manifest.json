@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "be4a7262d6c9199127224a959108c47564e57712719708dbc1284753ab0e8f5c",
-    "current": "be4a7262d6c9199127224a959108c47564e57712719708dbc1284753ab0e8f5c"
+    "previous": "e70533e3615ac182372bd8a32a56c941f0a2071a12175af30e28667942f510a7",
+    "current": "e70533e3615ac182372bd8a32a56c941f0a2071a12175af30e28667942f510a7"
   },
   "fonts": [
-    "assets/fonts/fontcustom_be4a7262d6c9199127224a959108c475.ttf",
-    "assets/fonts/fontcustom_be4a7262d6c9199127224a959108c475.svg",
-    "assets/fonts/fontcustom_be4a7262d6c9199127224a959108c475.woff",
-    "assets/fonts/fontcustom_be4a7262d6c9199127224a959108c475.eot"
+    "assets/fonts/fontcustom_e70533e3615ac182372bd8a32a56c941.ttf",
+    "assets/fonts/fontcustom_e70533e3615ac182372bd8a32a56c941.svg",
+    "assets/fonts/fontcustom_e70533e3615ac182372bd8a32a56c941.woff",
+    "assets/fonts/fontcustom_e70533e3615ac182372bd8a32a56c941.eot"
   ],
   "glyphs": {
     "crown": {
@@ -17,6 +17,10 @@
     "events": {
       "codepoint": 61699,
       "source": "assets/icons/svg/events.svg"
+    },
+    "hat": {
+      "codepoint": 61702,
+      "source": "assets/icons/svg/hat.svg"
     },
     "logo": {
       "codepoint": 61698,
